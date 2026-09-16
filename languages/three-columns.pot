@@ -1,0 +1,382 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Three Columns 1.0.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/three-columns\n"
+"POT-Creation-Date: 2026-09-15 00:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Domain: three-columns\n"
+
+#: header.php:31
+msgid "%s home"
+msgstr ""
+
+#: template-parts/related-card.php:19
+msgid "%s min"
+msgstr ""
+
+#: template-parts/content-card.php:18
+msgid "%s min read"
+msgstr ""
+
+#: front-page.php:70
+msgid "All essays →"
+msgstr ""
+
+#: front-page.php:112
+msgid "All notes →"
+msgstr ""
+
+#: front-page.php:80
+msgid "All reviews →"
+msgstr ""
+
+#: inc/widgets.php:14
+msgid "Appears below the primary navigation and search in the left rail."
+msgstr ""
+
+#: inc/customizer.php:71
+msgid "Automatic / Recent Posts"
+msgstr ""
+
+#: inc/customizer.php:65
+msgid "Choose optional categories for the fixed homepage sections. Empty selections fall back to recent posts."
+msgstr ""
+
+#: header.php:52
+msgid "Close context panel"
+msgstr ""
+
+#: header.php:50
+msgid "Close navigation"
+msgstr ""
+
+#: comments.php:37
+msgid "Comments are closed."
+msgstr ""
+
+#: header.php:47
+msgid "Context"
+msgstr ""
+
+#: sidebar-right.php:12
+msgid "Context and secondary information"
+msgstr ""
+
+#: inc/widgets.php:15
+msgid "Context widgets in the right rail. Single-post article context appears before these widgets."
+msgstr ""
+
+#: footer.php:38
+msgid "Copyright"
+msgstr ""
+
+#: sidebar-right.php:16
+msgid "CURRENT ARTICLE"
+msgstr ""
+
+#: front-page.php:52
+msgid "FEATURED"
+msgstr ""
+
+#: single.php:55
+msgid "Filed under"
+msgstr ""
+
+#: inc/widgets.php:17
+msgid "First half of the central footer column."
+msgstr ""
+
+#: inc/widgets.php:16
+msgid "Footer 1"
+msgstr ""
+
+#: inc/widgets.php:17
+msgid "Footer 2"
+msgstr ""
+
+#: inc/widgets.php:18
+msgid "Footer 3"
+msgstr ""
+
+#: inc/widgets.php:19
+msgid "Footer 4"
+msgstr ""
+
+#: inc/customizer.php:36
+msgid "Footer colophon"
+msgstr ""
+
+#: inc/customizer.php:30
+msgid "Header metadata"
+msgstr ""
+
+#: inc/customizer.php:24
+msgid "Header statement"
+msgstr ""
+
+#: inc/customizer.php:77
+msgid "Hero category"
+msgstr ""
+
+#: inc/customizer.php:64
+msgid "Homepage Sources"
+msgstr ""
+
+#: front-page.php:32
+msgid "INDEX"
+msgstr ""
+
+#: template-parts/posts-index.php:16
+msgid "Latest Writing"
+msgstr ""
+
+#: inc/widgets.php:16
+msgid "Left footer rail."
+msgstr ""
+
+#: inc/widgets.php:14
+msgid "Left Sidebar"
+msgstr ""
+
+#: header.php:45
+msgid "Menu"
+msgstr ""
+
+#: header.php:44
+msgid "Mobile panels"
+msgstr ""
+
+#: single.php:73
+msgid "NEXT"
+msgstr ""
+
+#: front-page.php:96
+msgid "Next series"
+msgstr ""
+
+#: template-parts/content-none.php:9
+msgid "Nothing found"
+msgstr ""
+
+#: sidebar-right.php:34
+msgid "ON THIS PAGE"
+msgstr ""
+
+#: template-parts/content-page.php:17
+msgid "Page"
+msgstr ""
+
+#: 404.php:15
+msgid "Page not found"
+msgstr ""
+
+#: single.php:45
+msgid "Post pages"
+msgstr ""
+
+#: single.php:70
+msgid "PREVIOUS"
+msgstr ""
+
+#: single.php:68
+msgid "Previous and next posts"
+msgstr ""
+
+#: front-page.php:95
+msgid "Previous series"
+msgstr ""
+
+#: sidebar-left.php:14
+msgid "Primary"
+msgstr ""
+
+#: inc/setup.php:38
+msgid "Primary Navigation"
+msgstr ""
+
+#: sidebar-left.php:12
+msgid "Primary navigation"
+msgstr ""
+
+#: front-page.php:61
+msgid "Read more →"
+msgstr ""
+
+#: template-parts/content-entry.php:21 template-parts/content-review.php:14
+msgid "READ MORE →"
+msgstr ""
+
+#: front-page.php:35
+msgid "Read the article"
+msgstr ""
+
+#: front-page.php:70
+msgid "RECENT ESSAYS"
+msgstr ""
+
+#: inc/customizer.php:78
+msgid "Recent Essays category"
+msgstr ""
+
+#: front-page.php:80
+msgid "RECENT REVIEWS"
+msgstr ""
+
+#: inc/customizer.php:79
+msgid "Recent Reviews category"
+msgstr ""
+
+#: single.php:81
+msgid "RELATED ARTICLES / 相關文章"
+msgstr ""
+
+#: inc/widgets.php:19
+msgid "Right footer rail."
+msgstr ""
+
+#: inc/widgets.php:15
+msgid "Right Sidebar"
+msgstr ""
+
+#: search.php:14
+msgid "Search: %s"
+msgstr ""
+
+#: inc/widgets.php:18
+msgid "Second half of the central footer column."
+msgstr ""
+
+#: front-page.php:112
+msgid "SELECTED NOTES / 隨筆"
+msgstr ""
+
+#: inc/customizer.php:81
+msgid "Selected Notes category"
+msgstr ""
+
+#: front-page.php:124
+msgid "SELECTED PUBLICATIONS / 精選出版"
+msgstr ""
+
+#: inc/customizer.php:82
+msgid "Selected Publications category"
+msgstr ""
+
+#: front-page.php:91
+msgid "SERIES / 專欄"
+msgstr ""
+
+#: inc/customizer.php:80
+msgid "Series category"
+msgstr ""
+
+#: front-page.php:94
+msgid "Series controls"
+msgstr ""
+
+#: front-page.php:100
+msgid "Series; scroll horizontally for more"
+msgstr ""
+
+#: header.php:27
+msgid "Skip to main content"
+msgstr ""
+
+#: inc/customizer.php:17
+msgid "Small identity texts used by the fixed publication header and colophon."
+msgstr ""
+
+#: single.php:59
+msgid "Tags"
+msgstr ""
+
+#: 404.php:16
+msgid "The address may have changed, or the page may no longer be published. Search the archive instead."
+msgstr ""
+
+#: template-parts/content-none.php:10
+msgid "There is no published content matching this view yet."
+msgstr ""
+
+#: inc/customizer.php:16
+msgid "Three Columns Identity"
+msgstr ""
+
+#: header.php:15 inc/customizer.php:31
+msgid "Tokyo / %s\nIndependent Notes"
+msgstr ""
+
+#: front-page.php:124
+msgid "View all books →"
+msgstr ""
+
+#: front-page.php:93
+msgid "View all →"
+msgstr ""
+
+#: index.php:13
+msgid "Writing"
+msgstr ""
+
+#: header.php:14 inc/customizer.php:25
+msgid "Writing a more attentive life.\nReading · Thinking · Recording"
+msgstr ""
+
+#: footer.php:14 inc/customizer.php:37
+msgid "© %1$s %2$s. All rights reserved."
+msgstr ""
+
+#: inc/template-tags.php:39
+msgid "%s min read"
+msgid_plural "%s min read"
+msgstr[0] ""
+msgstr[1] ""
+
+#: searchform.php:10
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:11
+msgctxt "placeholder"
+msgid "Search …"
+msgstr ""
+
+#: searchform.php:12
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: comments.php:17
+msgctxt "comments title"
+msgid "%1$s comment"
+msgid_plural "%1$s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: attachment.php
+msgid "ATTACHMENT"
+msgstr ""
+
+#: attachment.php
+msgid "View parent"
+msgstr ""
+
+#: attachment.php
+msgid "Open attached file →"
+msgstr ""
+
+#: attachment.php
+msgid "Attachment pages"
+msgstr ""
+
+#: front-page.php
+msgid "Front page introduction"
+msgstr ""
+
+#: front-page.php
+msgid "Page sections"
+msgstr ""
