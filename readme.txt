@@ -1,7 +1,7 @@
 === Three Columns ===
 Requires at least: 6.3
 Requires PHP: 7.4
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,6 +39,9 @@ Sharing is plugin territory and is deliberately not implemented by the theme. A 
 No. The homepage composition is intentionally fixed. Content sources are selected from normal WordPress categories, while sidebars and the footer use native Widget Areas.
 
 == Changelog ==
+
+= 1.0.8 =
+* Fixes a duplicate body-class callback that caused a fatal error after the 1.0.7 masthead update.
 
 = 1.0.7 =
 * Adds a flat masthead with desktop primary navigation and a mobile menu disclosure.

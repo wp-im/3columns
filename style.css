@@ -2,7 +2,7 @@
 Theme Name: Three Columns
 Author: Three Columns Contributors
 Description: A text-first three-column publication theme for WordPress. Navigation, document and context remain distinct across desktop and mobile.
-Version: 1.0.7
+Version: 1.0.8
 Requires at least: 6.3
 Requires PHP: 7.4
 License: GNU General Public License v2 or later
@@ -1499,7 +1499,7 @@ body.panel-open { overflow: hidden; }
 .search-title { overflow-wrap: anywhere; word-break: break-word; }
 
 /* --------------------------------------------------------------------------
-   FLAT MASTHEAD UPDATE — 1.0.7
+   FLAT MASTHEAD UPDATE — 1.0.8
    Desktop keeps the primary menu in the masthead. Mobile adds a normal-flow
    menu disclosure above the existing off-canvas Menu / Context toolbar.
    -------------------------------------------------------------------------- */

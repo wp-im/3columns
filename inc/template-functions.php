@@ -14,6 +14,9 @@ function three_columns_body_classes( $classes ) {
 	if ( is_singular( 'post' ) ) {
 		$classes[] = 'three-columns-single';
 	}
+	if ( has_nav_menu( 'primary' ) ) {
+		$classes[] = 'has-header-navigation';
+	}
 	return $classes;
 }
 add_filter( 'body_class', 'three_columns_body_classes' );

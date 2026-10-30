@@ -36,7 +36,7 @@ When **Your latest posts** is selected under Settings → Reading, the front pag
 
 ## Release compatibility
 
-Version 1.0.7 targets WordPress 7.1 compatibility and PHP 7.4+, but this build does not claim a WordPress 7.1 runtime verification because the current build environment cannot start WordPress with a database. Parent CSS is loaded explicitly so a child theme can add a small stylesheet without replacing the Three Columns base visual system.
+Version 1.0.8 targets WordPress 7.1 compatibility and PHP 7.4+, but this build does not claim a WordPress 7.1 runtime verification because the current build environment cannot start WordPress with a database. Parent CSS is loaded explicitly so a child theme can add a small stylesheet without replacing the Three Columns base visual system.
 
 
 ### WordPress.org contributor metadata

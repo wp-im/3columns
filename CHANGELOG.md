@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.8
+
+- Fixes a duplicate `body_class` callback that caused a fatal error after the 1.0.7 masthead update.
+
 ## 1.0.7
 
 - Adds the validated flat masthead treatment: desktop primary navigation, a compact mobile masthead, and a normal-flow mobile menu disclosure.

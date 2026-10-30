@@ -40,7 +40,7 @@ Footer 后台有四个独立区域，但前台仍严格保持原设计的三条�
 
 ### Three Columns Identity
 
-- Header statement / Header metadata：设置仍保留在 Customizer 中以兼容既有配置；当前 1.0.7 的扁平页眉只显示站名和 Primary Navigation，这两项不会显示在紧凑页眉中。
+- Header statement / Header metadata：设置仍保留在 Customizer 中以兼容既有配置；当前 1.0.8 的扁平页眉只显示站名和 Primary Navigation，这两项不会显示在紧凑页眉中。
 - Accent color 已固定为 `#1467ff`，属于主题视觉规范，不再作为自由 Customizer 选项。若确实需要品牌改色，建议通过 child theme 覆盖 CSS custom property。
 - Footer colophon：最底部 copyright / colophon 文字。
 
