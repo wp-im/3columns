@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.9
+
+- Fixes the mobile header menu disclosure selector so the opened navigation is visible.
+
 ## 1.0.8
 
 - Fixes a duplicate `body_class` callback that caused a fatal error after the 1.0.7 masthead update.
