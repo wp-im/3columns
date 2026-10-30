@@ -11,7 +11,7 @@ Three Columns is a **WordPress Classic Theme** for text-first personal publishin
 
 ## WordPress-native structure
 
-The theme remains a presentation layer for WordPress-managed content. It registers one Primary Menu, a Left Sidebar, a Right Sidebar, and four footer widgets areas. Header identity text, footer colophon, and homepage category sources are configured through the Customizer. The fixed accent `#1467ff` is part of the approved visual source of truth rather than a free-form theme option. Posts, pages, categories, tags, sticky posts, featured images, comments, search, archives, and pagination use WordPress core data and APIs.
+The theme remains a presentation layer for WordPress-managed content. It registers one Primary Menu, a Left Sidebar, a Right Sidebar, and four footer widgets areas. Header identity settings, footer colophon, and homepage category sources are configured through the Customizer. The flat masthead currently renders the site name and WordPress primary menu; the legacy statement/meta settings remain stored for compatibility but are intentionally not displayed in the compact masthead. The fixed accent `#1467ff` is part of the approved visual source of truth rather than a free-form theme option. Posts, pages, categories, tags, sticky posts, featured images, comments, search, archives, and pagination use WordPress core data and APIs.
 
 The fixed homepage composition is intentionally not a page builder. Its visual order remains Hero → Featured → Recent Essays → Recent Reviews → Series → Selected Notes → Selected Publications. Administrators choose category sources for the content sections; when no category is chosen, bounded recent-post queries provide fallback content. Featured prefers a WordPress Sticky post.
 
@@ -36,7 +36,7 @@ When **Your latest posts** is selected under Settings → Reading, the front pag
 
 ## Release compatibility
 
-Version 1.0.6 targets WordPress 7.1 compatibility and PHP 7.4+, but this build does not claim a WordPress 7.1 runtime verification because the current build environment cannot start WordPress with a database. Parent CSS is loaded explicitly so a child theme can add a small stylesheet without replacing the Three Columns base visual system.
+Version 1.0.7 targets WordPress 7.1 compatibility and PHP 7.4+, but this build does not claim a WordPress 7.1 runtime verification because the current build environment cannot start WordPress with a database. Parent CSS is loaded explicitly so a child theme can add a small stylesheet without replacing the Three Columns base visual system.
 
 
 ### WordPress.org contributor metadata

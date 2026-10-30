@@ -2,7 +2,7 @@
 Theme Name: Three Columns
 Author: Three Columns Contributors
 Description: A text-first three-column publication theme for WordPress. Navigation, document and context remain distinct across desktop and mobile.
-Version: 1.0.6
+Version: 1.0.7
 Requires at least: 6.3
 Requires PHP: 7.4
 License: GNU General Public License v2 or later
@@ -1497,3 +1497,219 @@ body.panel-open { overflow: hidden; }
 .page-title,
 .archive-title,
 .search-title { overflow-wrap: anywhere; word-break: break-word; }
+
+/* --------------------------------------------------------------------------
+   FLAT MASTHEAD UPDATE — 1.0.7
+   Desktop keeps the primary menu in the masthead. Mobile adds a normal-flow
+   menu disclosure above the existing off-canvas Menu / Context toolbar.
+   -------------------------------------------------------------------------- */
+.site-header .header-statement,
+.site-header .header-meta,
+.header-navigation,
+.header-menu-toggle { display: none; }
+.header-menu,
+.header-menu ul { list-style: none; margin: 0; padding: 0; }
+.header-menu .menu-item { margin: 0; padding: 0; }
+.header-menu a { text-decoration: none; }
+.header-menu-toggle {
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+}
+.header-menu-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.control-icon { position: relative; display: block; flex: 0 0 auto; }
+.control-icon--header { width: 20px; height: 20px; }
+.control-icon--header::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  width: 18px;
+  height: 1px;
+  background: currentColor;
+  box-shadow: 0 7px 0 currentColor, 0 14px 0 currentColor;
+}
+.control-icon--menu {
+  width: 16px;
+  height: 16px;
+  background: var(--accent);
+}
+.control-icon--menu::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  box-shadow: 0 4px 0 #fff, 0 8px 0 #fff;
+}
+.control-icon--sidebar {
+  width: 18px;
+  height: 18px;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+}
+.control-icon--sidebar::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: 10px;
+  border-left: 1px solid currentColor;
+}
+.menu-button,
+.sidebar-button { text-indent: 0; }
+.menu-button::before,
+.menu-button::after,
+.sidebar-button::before,
+.sidebar-button::after { display: none; }
+
+@media (min-width: 1290px) {
+  .site-header .header-grid { min-height: 96px; }
+  .site-header .header-grid > .brand { grid-column: 2; align-self: center; }
+  .site-header .header-grid > .header-navigation {
+    display: block;
+    grid-column: 4 / 7;
+    align-self: center;
+    justify-self: end;
+  }
+  .site-header .brand__name { font-size: 32px; font-weight: 680; }
+  .header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0 26px;
+  }
+  .header-menu > .menu-item { position: relative; width: auto; }
+  .header-menu > .menu-item > a {
+    display: block;
+    padding: 14px 0;
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  .header-menu > .menu-item > a:hover,
+  .header-menu > .menu-item.current-menu-item > a,
+  .header-menu > .menu-item.current-menu-ancestor > a { color: var(--accent); }
+  .header-menu .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    min-width: 180px;
+    padding: 8px 16px;
+    background: var(--paper);
+    border: 1px solid var(--line-strong);
+  }
+  .header-menu li:hover > .sub-menu,
+  .header-menu li:focus-within > .sub-menu { display: block; }
+  .header-menu .sub-menu a {
+    display: block;
+    padding: 7px 0;
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .header-menu .sub-menu a:hover,
+  .header-menu .sub-menu a:focus-visible { color: var(--accent); }
+  .has-header-navigation .primary-nav { display: none; }
+}
+
+@media (max-width: 1289px) {
+  .site-header {
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: var(--mobile-bar);
+    border-bottom: 0;
+    overflow: visible;
+    text-align: left;
+  }
+  .site-header .header-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: var(--mobile-bar);
+    padding-inline: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .site-header .brand { max-width: calc(100% - 52px); }
+  .site-header .brand__name { font-size: 24px; letter-spacing: -.035em; }
+  .site-header .custom-logo { display: none; }
+  .site-header .header-menu-toggle { display: inline-flex; }
+  .site-header.navigation-open .header-navigation {
+    display: block;
+    width: 100%;
+    flex: 0 0 100%;
+    border-top: 1px solid var(--line);
+    background: var(--wash);
+  }
+  .header-menu > .menu-item { border-bottom: 1px solid var(--line); }
+  .header-menu > .menu-item > a {
+    display: block;
+    padding: 15px 20px;
+    color: var(--ink);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .05em;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+  .header-menu > .menu-item > a:hover,
+  .header-menu > .menu-item > a:focus-visible { color: var(--accent); background: var(--paper); }
+  .header-menu .sub-menu { padding: 0 20px; background: var(--paper); border-top: 1px solid var(--line); }
+  .header-menu .sub-menu .menu-item { border-bottom: 1px dotted var(--line-strong); }
+  .header-menu .sub-menu .menu-item:last-child { border-bottom: 0; }
+  .header-menu .sub-menu a { display: block; padding: 9px 0; color: var(--text); font-size: 14px; line-height: 1.5; }
+  .header-menu .sub-menu a:hover,
+  .header-menu .sub-menu a:focus-visible { color: var(--accent); }
+
+  .off-canvas-nav {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    border-bottom: 1px solid var(--line-strong);
+    background: var(--paper);
+  }
+  .menu-button,
+  .sidebar-button { background: var(--paper); }
+  .menu-button { color: var(--accent); border-bottom: 0; }
+  .sidebar-button { color: var(--muted); border-bottom: 0; }
+  .menu-button:hover,
+  .sidebar-button:hover,
+  .menu-button:focus-visible,
+  .sidebar-button:focus-visible,
+  .menu-button[aria-expanded="true"],
+  .sidebar-button[aria-expanded="true"] { background: var(--wash-blue); }
+  .mask-left,
+  .mask-right {
+    top: calc(var(--mobile-bar) * 2);
+    bottom: 0;
+  }
+  body.admin-bar .mask-left,
+  body.admin-bar .mask-right { top: calc(var(--mobile-bar) * 2 + var(--wp-admin--admin-bar--height, 0px)); }
+}
+
+@media (max-width: 1023px) {
+  .left-rail,
+  .right-rail { top: calc(var(--mobile-bar) * 2); }
+  body.admin-bar .left-rail,
+  body.admin-bar .right-rail { top: calc(var(--mobile-bar) * 2 + var(--wp-admin--admin-bar--height, 0px)); }
+}
+
+@media (min-width: 1024px) and (max-width: 1289px) {
+  .site-header::after { display: none; }
+  .right-rail { top: calc(var(--mobile-bar) * 2); }
+  body.admin-bar .right-rail { top: calc(var(--mobile-bar) * 2 + var(--wp-admin--admin-bar--height, 0px)); }
+}

@@ -4,6 +4,7 @@
   const body = document.body;
   const menuButton = document.querySelector('.menu-button');
   const sidebarButton = document.querySelector('.sidebar-button');
+  const headerMenuButton = document.querySelector('.header-menu-toggle');
   const maskLeft = document.querySelector('.mask-left');
   const maskRight = document.querySelector('.mask-right');
   const leftRail = document.querySelector('#leftRail');
@@ -76,7 +77,14 @@
     syncPanelState();
   };
 
+  const closeHeaderMenu = (restoreFocus = false) => {
+    body.classList.remove('navigation-open');
+    headerMenuButton?.setAttribute('aria-expanded', 'false');
+    if (restoreFocus) headerMenuButton?.focus();
+  };
+
   const openPanel = (type, trigger, rail) => {
+    closeHeaderMenu();
     closePanels(false);
     lastTrigger = trigger;
     body.classList.add(type === 'nav' ? 'active-nav' : 'active-sidebar');
@@ -92,13 +100,27 @@
     if (body.classList.contains('active-sidebar')) closePanels();
     else openPanel('sidebar', sidebarButton, rightRail);
   });
+  headerMenuButton?.addEventListener('click', () => {
+    const open = !body.classList.contains('navigation-open');
+    closePanels(false);
+    body.classList.toggle('navigation-open', open);
+    headerMenuButton.setAttribute('aria-expanded', String(open));
+  });
   maskLeft?.addEventListener('click', () => closePanels());
   maskRight?.addEventListener('click', () => closePanels());
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') closePanels();
+    if (event.key !== 'Escape') return;
+    if (body.classList.contains('navigation-open')) {
+      closeHeaderMenu(true);
+      return;
+    }
+    closePanels();
   });
   window.addEventListener('resize', () => {
-    if (window.innerWidth >= 1260) closePanels(false);
+    if (window.innerWidth >= 1290) {
+      closeHeaderMenu();
+      closePanels(false);
+    }
     else if (window.innerWidth >= 1024 && body.classList.contains('active-nav')) closePanels(false);
     else syncPanelState();
   });

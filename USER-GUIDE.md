@@ -40,12 +40,11 @@ Footer 后台有四个独立区域，但前台仍严格保持原设计的三条�
 
 ### Three Columns Identity
 
-- Header statement：页眉中央的两行说明文字，支持换行。
-- Header metadata：页眉右侧的两行元信息，支持换行。
+- Header statement / Header metadata：设置仍保留在 Customizer 中以兼容既有配置；当前 1.0.7 的扁平页眉只显示站名和 Primary Navigation，这两项不会显示在紧凑页眉中。
 - Accent color 已固定为 `#1467ff`，属于主题视觉规范，不再作为自由 Customizer 选项。若确实需要品牌改色，建议通过 child theme 覆盖 CSS custom property。
 - Footer colophon：最底部 copyright / colophon 文字。
 
-Custom Logo 可以使用 WordPress 自带的 Site Identity 设置。Desktop 会在站名旁显示；Mobile 为保持原 HTML 的中央站名结构，会自动隐藏 logo 图形而保留站名。
+Custom Logo 可以使用 WordPress 自带的 Site Identity 设置。Desktop 会在站名旁显示；Mobile 的紧凑页眉会自动隐藏 logo 图形，以保留清晰的站名和菜单入口。
 
 ### Homepage Sources
 

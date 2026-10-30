@@ -41,6 +41,15 @@ function three_columns_setup() {
 }
 add_action( 'after_setup_theme', 'three_columns_setup' );
 
+function three_columns_body_classes( $classes ) {
+	if ( has_nav_menu( 'primary' ) ) {
+		$classes[] = 'has-header-navigation';
+	}
+
+	return $classes;
+}
+add_filter( 'body_class', 'three_columns_body_classes' );
+
 function three_columns_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'three_columns_content_width', 680 );
 }

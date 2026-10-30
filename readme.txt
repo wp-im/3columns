@@ -1,7 +1,7 @@
 === Three Columns ===
 Requires at least: 6.3
 Requires PHP: 7.4
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,6 +39,12 @@ Sharing is plugin territory and is deliberately not implemented by the theme. A 
 No. The homepage composition is intentionally fixed. Content sources are selected from normal WordPress categories, while sidebars and the footer use native Widget Areas.
 
 == Changelog ==
+
+= 1.0.7 =
+* Adds a flat masthead with desktop primary navigation and a mobile menu disclosure.
+* Keeps the existing off-canvas Menu and Context toolbar below the mobile masthead.
+* Removes duplicate desktop navigation while preserving the mobile left-rail menu.
+* Aligns mobile rail and mask offsets with the masthead plus toolbar height.
 
 = 1.0.6 =
 * Aligns the compact 1024–1289px header rule with the centered left/main content axis so its separator does not drift beyond the left rail as the viewport grows.

@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.7
+
+- Adds the validated flat masthead treatment: desktop primary navigation, a compact mobile masthead, and a normal-flow mobile menu disclosure.
+- Keeps the existing off-canvas Menu / Context toolbar below the masthead and updates rail/mask offsets to account for both rows.
+- Hides duplicate desktop left-rail navigation only when the primary menu is present in the masthead; mobile retains the left-rail route.
+
 ## 1.0.6
 
 - Aligns the compact 1024–1289px header separator with the centered left/main content axis so it does not drift beyond the left rail as the viewport grows.

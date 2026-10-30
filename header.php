@@ -38,13 +38,38 @@ $three_columns_has_context_rail = three_columns_has_context_rail();
 		</a>
 		<div class="header-statement"><?php echo nl2br( esc_html( $three_columns_statement ) ); ?></div>
 		<div class="header-meta"><?php echo nl2br( esc_html( $three_columns_meta ) ); ?></div>
+		<?php if ( has_nav_menu( 'primary' ) ) : ?>
+			<button class="header-menu-toggle" type="button" aria-controls="header-navigation" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'three-columns' ); ?>">
+				<span class="control-icon control-icon--header" aria-hidden="true"></span>
+			</button>
+			<nav id="header-navigation" class="header-navigation" aria-label="<?php esc_attr_e( 'Header navigation', 'three-columns' ); ?>">
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'primary',
+						'container'      => false,
+						'menu_class'     => 'header-menu',
+						'menu_id'       => 'header-menu',
+						'fallback_cb'    => false,
+						'depth'          => 2,
+					)
+				);
+				?>
+			</nav>
+		<?php endif; ?>
 	</div>
 </header>
 
 <div class="off-canvas-nav" aria-label="<?php esc_attr_e( 'Mobile panels', 'three-columns' ); ?>">
-	<button class="menu-button" type="button" aria-expanded="false" aria-controls="leftRail"><?php esc_html_e( 'Menu', 'three-columns' ); ?></button>
+	<button class="menu-button" type="button" aria-expanded="false" aria-controls="leftRail">
+		<span class="screen-reader-text"><?php esc_html_e( 'Menu', 'three-columns' ); ?></span>
+		<span class="control-icon control-icon--menu" aria-hidden="true"></span>
+	</button>
 	<?php if ( $three_columns_has_context_rail ) : ?>
-		<button class="sidebar-button" type="button" aria-expanded="false" aria-controls="rightRail"><?php esc_html_e( 'Context', 'three-columns' ); ?></button>
+		<button class="sidebar-button" type="button" aria-expanded="false" aria-controls="rightRail">
+			<span class="screen-reader-text"><?php esc_html_e( 'Context', 'three-columns' ); ?></span>
+			<span class="control-icon control-icon--sidebar" aria-hidden="true"></span>
+		</button>
 	<?php endif; ?>
 </div>
 <button class="mask-left" type="button" aria-label="<?php esc_attr_e( 'Close navigation', 'three-columns' ); ?>"></button>

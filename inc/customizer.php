@@ -14,7 +14,7 @@ function three_columns_customize_register( $wp_customize ) {
 		'three_columns_identity',
 		array(
 			'title'       => __( 'Three Columns Identity', 'three-columns' ),
-			'description' => __( 'Small identity texts used by the fixed publication header and colophon.', 'three-columns' ),
+			'description' => __( 'Legacy identity texts are retained for compatibility; the current flat masthead uses the site name and Primary Navigation.', 'three-columns' ),
 			'priority'    => 35,
 		)
 	);
